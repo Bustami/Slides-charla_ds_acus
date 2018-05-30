@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ciencia de datos aplicada a la Acústica</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Ciencia de datos aplicada a la Acústica">
+  <meta name="author" content="Académico INACAP / Data Scientist Yalea Languages">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/inacap.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Ciencia de datos aplicada a la Acústica</h1>
+    <h2>Ismael Gómez Schmidt</h2>
+    <p>Académico INACAP / Data Scientist Yalea Languages<br/>ismaelgomezs@gmail.com</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide {
+  background-color: white; 
+}
+
+
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
+
+.title-slide hgroup > h1{
+  color: black;
+}
+
+.title-slide hgroup > h2 {
+  color: #3182bd;
+}
+
+.title-slide hgroup > p {
+  color: #2b323f;
+}
+</style>
+
+<h2>¿Qué haremos?</h2>
+
+<ul class = "build incremental">
+<li><p>¿Qué es la Acústica?</p></li>
+<li><p>¿Qué es la Ciencia de datos?</p></li>
+<li><p>Ejemplos de Ciencia de datos aplicada a la Acústica: <center><img src="assets/img/timeline.png"  width="90%" ></center></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue" id="slide-2" style="background:#3182bd;">
+  <hgroup>
+    <h2>¿Qué es la Acústica?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><center><img src="assets/img/acustica.png" height="100%" width="100%"></center></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-4" style="background:;">
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul class = "build incremental">
+<li><center><img src="assets/img/med1.jpg" height="70%" width="70%" ></center></li>
+<li><center><img src="assets/img/mapa_ruido.jpg" height="70%" width="70%" ></center></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul class = "build incremental">
+<li><center><img src="assets/img/molestia.jpg" height="80%" width="80%" ></center></li>
+<li><center><img src="assets/img/burden.jpg" height="60%" width="60%" ></center></li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue" id="slide-5" style="background:#9e9ac8;">
+  <hgroup>
+    <h2>¿Qué es la Ciencia de Datos?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><center><img src="assets/img/data_science_skills.jpg" width="100%" ></center></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-7">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><center><img src="assets/img/modern_data_scientist_quora.png" height="640px" width="440px" ></center></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-8">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><center><img src="assets/img/data-science-workflow1.png" width="100%" ></center></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="segue" id="slide-9" style="background:#33a02c;">
+  <hgroup>
+    <h2>Ejemplos de DS aplicada a la Acústica</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><center><img src="assets/img/timeline.png"  width="100%" ></center></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>2012-2013</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul class = "build incremental">
+<li><a href="https://www.researchgate.net/publication/243475053_Noise_Classification_of_Aircrafts_using_Artificial_Neural_Networks?_sg=Pnl-byt_l0pfEX8Okwv7bcF0x7V2BVTnZiANfKARJD9Uady-ij3W1nD_ltfkD6WbbFmb5XWxK64yUbRBHoVC-DycG2-BuvTojD5BB1Ct.ohWQWs5poq-rQhH8UsunBGN5W13Jo7PuUC_UwYuUR6sVHkPHSnzHibLTQYC9B-i8uSojCECBYjy2odrBWb91oQ" target="_blank"><center><img src="assets/img/2012.png" height="80%" width="80%" ></center></a></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul class = "build incremental">
+<li><p><a href="https://www.researchgate.net/publication/258998053_Desarrollo_de_un_algoritmo_para_la_deteccion_del_paso_de_aeronaves_Tesis?_sg=Pnl-byt_l0pfEX8Okwv7bcF0x7V2BVTnZiANfKARJD9Uady-ij3W1nD_ltfkD6WbbFmb5XWxK64yUbRBHoVC-DycG2-BuvTojD5BB1Ct.ohWQWs5poq-rQhH8UsunBGN5W13Jo7PuUC_UwYuUR6sVHkPHSnzHibLTQYC9B-i8uSojCECBYjy2odrBWb91oQ" target="_blank"><center><img src="assets/img/2013A.png" height="65%" width="65%" ></center></a></p></li>
+<li><p><a href="https://www.researchgate.net/publication/266384427_Integration_of_two_methods_to_detect_aircraft_noise_events_Inter_Noise_2013_-_not_submitted?_sg=Pnl-byt_l0pfEX8Okwv7bcF0x7V2BVTnZiANfKARJD9Uady-ij3W1nD_ltfkD6WbbFmb5XWxK64yUbRBHoVC-DycG2-BuvTojD5BB1Ct.ohWQWs5poq-rQhH8UsunBGN5W13Jo7PuUC_UwYuUR6sVHkPHSnzHibLTQYC9B-i8uSojCECBYjy2odrBWb91oQ" target="_blank"><center><img src="assets/img/2013B.png" height="65%" width="65%" ></center></a></p></li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul class = "build incremental">
+<li><center><img src="assets/img/rna3.png" height="70%" width="70%" ></center></li>
+<li><center><img src="assets/img/rna4.png" height="70%" width="70%" ></center></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul class = "build incremental">
+<li><center><img src="assets/img/rna1.png" height="80%" width="80%" ></center></li>
+<li><center><img src="assets/img/rna2.png" height="60%" width="60%" ></center></li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><center><img src="assets/img/rna5.png" height="60%" width="60%" ></center></li>
+<li><center><img src="assets/img/rna6.png" height="50%" width="50%" ></center></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Resumen 2012-2013</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p>Datos: Niveles de presión sonora de monitoreos continuos</p></li>
+<li><p>Referencia: Bitácora de vuelos del aeropuerto AMB</p></li>
+<li><p>Problema de clasificación abordado con Redes neuronales artificiales (técnica de Machine Learning)</p></li>
+<li><p>Herramienta de programación: Matlab</p></li>
+<li><p>Resultado: Alta precisión para diferenciar entre despegues y aterrizajes (94%); además de la distinción entre grupos de modelos de aeronaves (96%)</p></li>
+<li><p>Aplicación: Posibilidad de calibrar y calcular contribución exclusiva del aeropuerto en receptor específico y evaluar cumplimiento normativo</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><center><img src="assets/img/timeline.png"  width="100%" ></center></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-16">
+<hgroup>
+  <h2>2015</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><a href="https://www.researchgate.net/publication/280882977_Influence_of_road_traffic_noise_in_ischaemic_heart_disease_Introduction_to_the_issue_in_Santiago_of_Chile?_sg=Pnl-byt_l0pfEX8Okwv7bcF0x7V2BVTnZiANfKARJD9Uady-ij3W1nD_ltfkD6WbbFmb5XWxK64yUbRBHoVC-DycG2-BuvTojD5BB1Ct.ohWQWs5poq-rQhH8UsunBGN5W13Jo7PuUC_UwYuUR6sVHkPHSnzHibLTQYC9B-i8uSojCECBYjy2odrBWb91oQ" target="_blank"><center><img src="assets/img/2015.png" height="100%" width="100%" ></center></a></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-17" style="background:;">
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul class = "build incremental">
+<li><center><img src="assets/img/daly1.png" height="100%" width="100%" ></center></li>
+<li><center><img src="assets/img/daly3.png" height="95%" width="95%" ></center></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul class = "build incremental">
+<li><center><img src="assets/img/daly2.png" height="100%" width="100%" ></center></li>
+<li><center><img src="assets/img/daly4.png" height="60%" width="60%" ></center></li>
+<li><center><img src="assets/img/daly5.png" height="100%" width="100%" ></center></li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Resumen 2015</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p>Datos: Población potencialmente expuesta a ruido de tráfico vehicular según Mapa de ruido de Santiago 2011</p></li>
+<li><p>Problema: Cruce con otras fuentes de datos (Esperanza de vida INE + Defunciones y Egresos hospitalarios del DEIS)</p></li>
+<li><p>Problema: Proceso de datos (limpieza y orden) + Interpretación</p></li>
+<li><p>Herramienta de programación: RStudio</p></li>
+<li><p>Resultado: PAF Stgo 2011 = 4% (al nivel de EU en los 90)</p></li>
+<li><p>Resultado: 351 casos atribuibles, 94 fallecieron + 185 DALYs</p></li>
+<li><p>Aplicación: Cuantificación de efectos en salud y económicos. Reproducibilidad continua.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><center><img src="assets/img/timeline.png"  width="100%" ></center></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-20">
+<hgroup>
+  <h2>2016</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><a href="https://www.researchgate.net/publication/303920437_Data_analysis_of_noise_complaints_in_Region_Metropolitana_Chile?_sg=Pnl-byt_l0pfEX8Okwv7bcF0x7V2BVTnZiANfKARJD9Uady-ij3W1nD_ltfkD6WbbFmb5XWxK64yUbRBHoVC-DycG2-BuvTojD5BB1Ct.ohWQWs5poq-rQhH8UsunBGN5W13Jo7PuUC_UwYuUR6sVHkPHSnzHibLTQYC9B-i8uSojCECBYjy2odrBWb91oQ" target="_blank"><center><img src="assets/img/2016.png" height="100%" width="100%" ></center></a></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-21" style="background:;">
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul class = "build incremental">
+<li><center><img src="assets/img/mio1.png" height="90%" width="90%" ></center></li>
+<li><center><img src="assets/img/mio3.png" height="95%" width="95%" ></center></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul class = "build incremental">
+<li><center><img src="assets/img/mio2.png" height="90%" width="90%" ></center></li>
+<li><center><img src="assets/img/mio4.png" height="80%" width="80%" ></center></li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Resumen 2016</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p>Datos: Denuncias de ruido en Carabineros de Chile 2011-15 (RM)</p></li>
+<li><p>Problema: Solicitud de datos vía Ley de Transparencia</p></li>
+<li><p>Problema: Proceso de datos (limpieza y orden) + Interpretación</p></li>
+<li><p>Problema: Cruce con otras fuentes de datos (Población de comunas INE + límites comunales de Mapoteca Congreso Nacional) + Visualización</p></li>
+<li><p>Herramienta de programación: RStudio</p></li>
+<li><p>Resultado: Diagnóstico + Propuesta de mejoras (formato de denuncias)</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><center><img src="assets/img/timeline.png"  width="100%" ></center></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>2018 y más...</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p>Paper PAF + DALY + HSD para 3 ciudades + info. del mapa de Santiago actualizado</p></li>
+<li><p>Proyecto para mejorar gestión de denuncias de ruido</p></li>
+<li><p>En <a href="http://www.researchgate.net">www.researchgate.net</a> están todos los papers y códigos utilizados</p></li>
+<li><p>Proyecto personal Dato Fútbol: <a href="http://www.datofutbol.cl">www.datofutbol.cl</a></p></li>
+<li><p><center><img src="assets/img/plot2.png"  width="70%" ></center></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="b" style="background:;">
+  <article data-timings="">
+    <style>
+#b {
+    background: url(assets/img/the-end.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='¿Qué es la Acústica?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='NA'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='¿Qué es la Ciencia de Datos?'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='NA'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='NA'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='NA'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Ejemplos de DS aplicada a la Acústica'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='NA'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='2012-2013'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='NA'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='NA'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Resumen 2012-2013'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='NA'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='2015'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='NA'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Resumen 2015'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='NA'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='2016'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='NA'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Resumen 2016'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='NA'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='2018 y más...'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='NA'>
+         25
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
